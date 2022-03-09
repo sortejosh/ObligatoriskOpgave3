@@ -1,0 +1,37 @@
+<!DOCTYPE htm>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>String Manipulation</h1>
+        <div id="app">
+            <input id="inputField" v-model="word" placeholder="Word"/>   
+                <button id="button" v-on:click="sayHello()" >
+                    Show It
+                </button>
+            <div id="outputField" v-if="word">
+                <ul>
+                    <li>{{output}}</li>
+                    <li>{{output1}}</li>
+                    <li>{{output2}}</li>
+                    <li>{{output3}}</li>
+                    <li>{{output4}}</li>
+                    <li>{{output5}}</li>
+                </ul>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">{{output}}</li>
+                <li class="list-group-item list-group-item-light">{{output1}}</li>
+                <li class="list-group-item list-group-item-dark">{{output2}}</li>
+                <li class="list-group-item list-group-item-light">{{output3}}</li>
+                <li class="list-group-item list-group-item-dark">{{output4}}</li>
+                <li class="list-group-item list-group-item-light">{{output5}}</li>
+            </ul>
+<script src="js/index.js"></script>
+</body>
+</htm>
